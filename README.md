@@ -20,7 +20,7 @@ Create or update the ```.babelrc``` file in the root of your app
 
 ```js
 {
-  "plugins": {
+  "plugins": [
     "babel-plugin-transform-decorators-legacy"
   ]
 }
