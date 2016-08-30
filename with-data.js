@@ -1,7 +1,7 @@
 import {createContainer} from 'meteor/react-meteor-data'
 
-export default function (data) {
+export default function (func) {
   return function (ComposedComponent) {
-    return createContainer(data, ComposedComponent)
+    return createContainer(func, ComposedComponent)
   }
 }
