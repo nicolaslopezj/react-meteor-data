@@ -2,6 +2,30 @@
 
 Fetch Meteor data in React using decorators
 
+### Installing
+
+Install the package
+
+```
+meteor add orionsoft:react-meteor-data
+```
+
+Install the babel decorator
+
+```
+npm install --save-dev babel-plugin-transform-decorators-legacy
+```
+
+Update the ```.babelrc``` file in the root of your app
+
+```js
+{
+  "plugins": {
+    "babel-plugin-transform-decorators-legacy"
+  ]
+}
+```
+
 ### Example
 
 ```js
