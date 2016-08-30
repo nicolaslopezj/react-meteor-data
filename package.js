@@ -1,18 +1,15 @@
 Package.describe({
   name: 'orionsoft:react-meteor-data',
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  summary: 'Fetch Meteor data in React using decorators',
+  git: 'https://github.com/orionsoft/react-meteor-data',
   documentation: 'README.md'
 })
 
 Package.onUse(function (api) {
   api.versionsFrom('1.4.1.1')
   api.use('ecmascript')
+  api.use('react-meteor-data')
   api.mainModule('main.js')
 })
 
@@ -20,5 +17,5 @@ Package.onTest(function (api) {
   api.use('ecmascript')
   api.use('tinytest')
   api.use('orionsoft:react-meteor-data')
-  api.mainModule('react-meteor-data-tests.js')
+  // api.mainModule('react-meteor-data-tests.js')
 })
