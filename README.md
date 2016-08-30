@@ -5,6 +5,7 @@ Fetch Meteor data in React using decorators
 ### Example
 
 ```js
+import React from 'react'
 import {Meteor} from 'meteor/meteor'
 import {withData} from 'meteor/orionsoft:react-meteor-data'
 import MyCollection from './my-collection'
