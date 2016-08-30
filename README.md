@@ -16,7 +16,7 @@ Install the babel decorator
 npm install --save-dev babel-plugin-transform-decorators-legacy
 ```
 
-Update the ```.babelrc``` file in the root of your app
+Create or update the ```.babelrc``` file in the root of your app
 
 ```js
 {
