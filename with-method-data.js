@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'underscore'
 
 export default function (getData) {
   return function (ComposedComponent) {
@@ -13,23 +14,25 @@ export default function (getData) {
         }
       }
 
+      componentWillReceiveProps (nextProps) {
+        if (!_.isEqual(this.props, nextProps)) {
+          this.fetchData()
+        }
+      }
+
       componentWillMount () {
         this.fetchData()
       }
 
       fetchData () {
         this.setState({isLoading: true})
-        getData(this.props, (error, data) => {
-          if (error) {
-            this.setState({isLoading: false, data: null, error})
-          } else {
-            this.setState({isLoading: false, data, error: null})
-          }
+        getData(this.props, (error, response) => {
+          this.setState({isLoading: false, response, error})
         })
       }
 
       render () {
-        return <ComposedComponent {...this.props} {...this.state}/>
+        return <ComposedComponent {...this.props} {...this.state} {...this.state.response}/>
       }
 
     }
