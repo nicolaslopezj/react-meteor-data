@@ -85,7 +85,7 @@ const propTypes = {
   item: React.PropTypes.string
 }
 
-@withData(({itemId}, ready) => {
+@withMethodData(({itemId}, ready) => {
   Meteor.call('getItem', itemId, ready)
 })
 export default class Component extends React.Component {
