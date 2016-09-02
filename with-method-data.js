@@ -8,8 +8,6 @@ export default function (getData) {
       constructor (props) {
         super(props)
         this.state = {
-          data: null,
-          error: null,
           isLoading: true
         }
       }
