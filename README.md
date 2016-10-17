@@ -5,6 +5,7 @@ Fetch Meteor data in React using decorators
 Medium Post
 
 - [Using decorators to fetch Meteor data in React](https://medium.com/orionsoft/using-decorators-to-fetch-meteor-data-in-react-419a6869400c)
+- [Using Meteor methods on React components to fetch data](https://medium.com/orionsoft/using-meteor-methods-on-react-components-to-fetch-data-8f98431a6252)
 
 ### Installing
 
