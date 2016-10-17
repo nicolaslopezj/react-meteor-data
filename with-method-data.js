@@ -14,17 +14,17 @@ export default function (getData) {
 
       componentWillReceiveProps (nextProps) {
         if (!_.isEqual(this.props, nextProps)) {
-          this.fetchData()
+          this.fetchData(nextProps)
         }
       }
 
       componentWillMount () {
-        this.fetchData()
+        this.fetchData(this.props)
       }
 
-      fetchData () {
+      fetchData (props) {
         this.setState({isLoading: true})
-        getData(this.props, (error, response) => {
+        getData(props, (error, response) => {
           this.setState({isLoading: false, response, error})
         })
       }
