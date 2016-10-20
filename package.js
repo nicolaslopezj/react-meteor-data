@@ -1,6 +1,6 @@
 Package.describe({
   name: 'orionsoft:react-meteor-data',
-  version: '0.1.2',
+  version: '0.1.3',
   summary: 'Fetch Meteor data in React using decorators',
   git: 'https://github.com/orionsoft/react-meteor-data',
   documentation: 'README.md'
