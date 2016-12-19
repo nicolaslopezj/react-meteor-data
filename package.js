@@ -1,6 +1,6 @@
 Package.describe({
   name: 'orionsoft:react-meteor-data',
-  version: '0.1.3',
+  version: '0.1.4',
   summary: 'Fetch Meteor data in React using decorators',
   git: 'https://github.com/orionsoft/react-meteor-data',
   documentation: 'README.md'
@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('1.4.1.1')
   api.use('ecmascript')
-  apu.use('underscore')
+  api.use('underscore')
   api.use('react-meteor-data@0.1.9')
   api.mainModule('main.js')
 })
