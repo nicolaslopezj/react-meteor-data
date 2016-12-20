@@ -1,5 +1,5 @@
 import React from 'react'
-import _ from 'meteor/underscore'
+import {_} from 'meteor/underscore'
 
 export default function (getData) {
   return function (ComposedComponent) {
