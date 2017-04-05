@@ -10,7 +10,7 @@ Package.onUse(function (api) {
   api.versionsFrom('1.4.1.1')
   api.use('ecmascript')
   api.use('underscore')
-  api.use('react-meteor-data@0.1.9')
+  api.use('react-meteor-data@0.2.9')
   api.mainModule('main.js')
 })
 
